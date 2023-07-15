@@ -14,7 +14,7 @@
   </section>
 </template>
 <script>
-import exploreCard from '@/components/homeCompinents/exploreComponent/exploreCard.vue'
+import exploreCard from '@/components/homeCompinents/exploreCard.vue'
 
 export default {
   components: {exploreCard}

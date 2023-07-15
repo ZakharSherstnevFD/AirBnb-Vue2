@@ -7,6 +7,7 @@ import Home from './pages/TheHome.vue'
 import HomesPage from "@/pages/HomesPage.vue";
 import ExperiencesPage from '@/pages/ExperiencesPage.vue'
 import RestaurantsPage from '@/pages/RestaurantsPage.vue'
+import CardPage from '@/pages/CardPages.vue'
 
 import NoteFound from './pages/TheNotFound.vue'
 
@@ -32,6 +33,11 @@ export default new Router({
       path: '/restaurantsPage',
       name: 'restaurantsPage',
       component: RestaurantsPage,
+    },
+    {
+      path: '/card',
+      name: 'card',
+      component: CardPage,
     },
     {
       path: '*',
