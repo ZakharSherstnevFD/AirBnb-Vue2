@@ -1,9 +1,11 @@
 <template>
   <div class="wrapper-content wrapper-content--fixed">
-    <section>
-      <div class="_container">
-        <p>home page</p>
-      </div>
-    </section>
+    <explore />
   </div>
 </template>
+<script>
+import explore from '@/components/homeCompinents/TheExplore.vue'
+export default {
+  components:{explore}
+}
+</script>

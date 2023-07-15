@@ -1,40 +1,16 @@
 <template>
   <div class="wrapper">
-    <header>
-      <div class="navbar">
-        <div class="_container">
-          <div class="navbar-content">
-            <div class="logo">VUE 2 CLI</div>
-            <ul class="navbar-list">
-              <li v-for="link in links" :key="link.title" class="navbar-item">
-                <router-link :to="link.url" class="navbar-link">{{
-                  link.title
-                }}</router-link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
+    <theHeader />
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import theHeader from '@/components/headerComponents/TheHeader.vue'
 export default {
+  components:{theHeader},
   data() {
-    return {
-      links: [
-        {
-          title: "home",
-          url: "/",
-        },
-        {
-          title: "example",
-          url: "example",
-        },
-      ],
-    };
+    return {};
   },
 };
 </script>

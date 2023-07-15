@@ -3,9 +3,11 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
+import header from './header'
+import explore from './explore'
 export default new Vuex.Store ({
-    state:{},
-    mutations:{},
-    actions:{},
-    getters: {}
+    modules: {
+      header,
+      explore
+    }
 })
